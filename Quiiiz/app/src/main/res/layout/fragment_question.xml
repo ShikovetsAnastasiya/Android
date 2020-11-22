@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".game.QuestionFragment">
+
+    <Button
+        android:id="@+id/question_tip_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="50 / 50"
+        android:textSize="16sp"
+        android:background="@drawable/button_background"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <TextView
+        android:id="@+id/question_text_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/question_answers_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98">
+
+        <Button
+            android:id="@+id/question_answer_1"
+            android:layout_width="180dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_background"
+            app:layout_constraintBottom_toTopOf="@id/question_answer_3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/question_answer_2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+        <Button
+            android:id="@+id/question_answer_2"
+            android:layout_width="180dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_background"
+            app:layout_constraintBottom_toTopOf="@id/question_answer_4"
+            app:layout_constraintLeft_toRightOf="@id/question_answer_1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/question_answer_3"
+            android:layout_width="180dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_background"
+            app:layout_constraintBottom_toTopOf="@id/question_answer_5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/question_answer_4"
+            app:layout_constraintTop_toBottomOf="@id/question_answer_1" />
+
+        <Button
+            android:id="@+id/question_answer_4"
+            android:layout_width="180dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_background"
+            app:layout_constraintBottom_toTopOf="@id/question_answer_6"
+            app:layout_constraintLeft_toRightOf="@id/question_answer_3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/question_answer_2" />
+
+        <Button
+            android:id="@+id/question_answer_5"
+            android:layout_width="180dp"
+            android:layout_height="65dp"
+            android:background="@drawable/button_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/question_answer_6"
+            app:layout_constraintTop_toBottomOf="@id/question_answer_3" />
+
+        <Button
+            android:id="@+id/question_answer_6"
+            android:layout_width="180dp"
+            android:layout_height="65dp"
+            android:background="@drawable/button_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/question_answer_5"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/question_answer_4" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
